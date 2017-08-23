@@ -1,5 +1,5 @@
 <ul id = "employees">
    <% @employees.each do |e| %>
-   <li><%= link_to e[:name], {:action => 'profile', :name => e[:name], :designation => e[:designation], :age => e[:age], :date_of_joining => e[:date_of_joining]} -%></li>
+   <li><%= link_to e[:name], "/employee/#{e[:name]}/profile" %></li>
    <% end %>
 </ul>
